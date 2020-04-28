@@ -1,0 +1,47 @@
+version: '2'
+services:
+# Database
+
+  mysql:
+    image: mysql:5.7
+    container_name: bhoklagyo_db
+    ports:
+      - "3360:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_USER: root
+      MYSQL_DATABASE: bhoklagyo_db
+    volumes:
+      - ./docker/mysql:/var/lib/mysql
+    networks: 
+      - default
+  # redis:
+  #   image: "redis:alpine"
+  #   ports: 
+  #     - "6379"
+
+
+# Products
+  server:
+    image: "realanmup/laradocker:latest"
+    container_name: bhoklagyo_s
+    ports:
+      - "80:80"
+      - "5000:5000"
+    environment:
+      DB_HOST: bhoklagyo_db
+      DB_PORT: 3306
+      DB_DATABASE: bhoklagyo_db
+      DB_USERNAME: root
+      DB_PASSWORD: root
+    volumes:
+      - ./:/srv/
+    privileged: true
+    links:
+      - mysql
+      # - redis
+    working_dir: "/srv"
+    command: sh start.sh
+    networks: 
+      - default
+
