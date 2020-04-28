@@ -9,9 +9,9 @@ class InsertDatabaseAdmin extends Migration
     public $adminUser = 'admin';
     //admin
     public $adminPassword = '$2y$10$JcmAHe5eUZ2rS0jU1GWr/.xhwCnh2RU13qwjTPcqfmtZXjZxcryPO';
-    public $adminEmail = 'your-email@your-domain.com';
+    public $adminEmail = 'info@anmup.online';
     public $timezone_default = 'Asia/Ho_Chi_Minh';
-    public $language_default = 'vi';
+    public $language_default = 'ne';
 
     /**
      * Run the migrations.
@@ -288,7 +288,7 @@ class InsertDatabaseAdmin extends Migration
             ['config_id' => '1', 'lang' => 'en', 'title' => 'Demo S-cart : Free Laravel eCommerce for Business', 'description' => 'Free website shopping cart for business', 'keyword' => '', 'maintain_content' => '<center><img src="/images/maintenance.png" />
 <h3><span style="color:#e74c3c;"><strong>Sorry! We are currently doing site maintenance!</strong></span></h3>
 </center>'],
-            ['config_id' => '1', 'lang' => 'vi', 'title' => 'Demo S-cart: Mã nguồn website thương mại điện tử miễn phí cho doanh nghiệp', 'description' => 'Laravel shopping cart for business', 'keyword' => '', 'maintain_content' => '<center><img src="/images/maintenance.png" />
+            ['config_id' => '1', 'lang' => 'ne', 'title' => 'Demo S-cart: Mã nguồn website thương mại điện tử miễn phí cho doanh nghiệp', 'description' => 'Laravel shopping cart for business', 'keyword' => '', 'maintain_content' => '<center><img src="/images/maintenance.png" />
 <h3><span style="color:#e74c3c;"><strong>Xin lỗi! Hiện tại website đang bảo trì!</strong></span></h3>
 </center>'],
         ]);

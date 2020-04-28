@@ -155,7 +155,7 @@ class InsertDatabaseShop extends Migration
 
         DB::table(SC_DB_PREFIX.'shop_language')->insert([
             ['id' => '1', 'name' => 'English', 'code' => 'en', 'icon' => '/data/language/flag_uk.png', 'status' => '1', 'rtl' => '0','sort' => '1'],
-            ['id' => '2', 'name' => 'Tiếng Việt', 'code' => 'vi', 'icon' => '/data/language/flag_vn.png', 'status' => '1', 'rtl' => '0','sort' => '1'],
+            ['id' => '2', 'name' => 'Nepali', 'code' => 'ne', 'icon' => '/data/language/flag_ne.png', 'status' => '1', 'rtl' => '0','sort' => '1'],
         ]);
 
         DB::table(SC_DB_PREFIX.'shop_block_content')->insert([
@@ -304,8 +304,8 @@ class InsertDatabaseShop extends Migration
         ]);
 
         DB::table(SC_DB_PREFIX.'shop_currency')->insert([
-            ['id' => '1', 'name' => 'USD Dola', 'code' => 'USD', 'symbol' => '$', 'exchange_rate' => '1', 'precision' => '0', 'symbol_first' => '1', 'thousands' => ',', 'status' => '1', 'sort' => '0'],
-            ['id' => '2', 'name' => 'VietNam Dong', 'code' => 'VND', 'symbol' => '₫', 'exchange_rate' => '20', 'precision' => '0', 'symbol_first' => '0', 'thousands' => ',', 'status' => '1', 'sort' => '1'],
+            ['id' => '1', 'name' => 'US Dollar', 'code' => 'USD', 'symbol' => '$', 'exchange_rate' => '1', 'precision' => '0', 'symbol_first' => '1', 'thousands' => ',', 'status' => '1', 'sort' => '0'],
+            ['id' => '2', 'name' => 'रूपैयाँ', 'code' => 'NPR', 'symbol' => 'रू', 'exchange_rate' => '120', 'precision' => '0', 'symbol_first' => '0', 'thousands' => ',', 'status' => '1', 'sort' => '1'],
         ]);
 
         DB::table(SC_DB_PREFIX.'shop_order_status')->insert([

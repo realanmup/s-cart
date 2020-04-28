@@ -11,3 +11,5 @@ yarn-error.log
 .env
 public/storage/.gitignore
 docker
+public/data
+storage/logs/*
